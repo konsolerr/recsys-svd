@@ -83,7 +83,13 @@ for user in r:
         if not user_ratings.get(item):
             user_ratings[item] = average_item_rating[item]
 
-for _ in range(2):
+for _ in range(50):
+    """
+    I would like to have more than 50
+    and more features than 5,
+    but python is SO SLOW =(
+    that even executing this code took me like half an hour
+    """
     print(_)
     print(datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
     for user in r:
